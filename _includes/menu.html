@@ -1,7 +1,7 @@
 {% for order in (0..10) %}
         {% for p in site.pages %}
                 {% if p.order == order %}
-                        <li><a href="{{ p.url }}" {% if p.title == page.title %}class="selected-item"{% endif %}>{{ p.title }}</a></li>
+                        <a href="{{ p.url }}" {% if p.title == page.title %}class="selected-item"{% endif %}>{{ p.title }}</a>
                 {% endif %}
         {% endfor %}
 {% endfor %}
