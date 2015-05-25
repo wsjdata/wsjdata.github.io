@@ -291,4 +291,7 @@ footer {
 
 /* Table */
 
-table, table th, table td {border:1px solid #aaa}
+table, table th, table td {border:1px solid #aaa;}
+table th {font-weight:bold; }
+table th, table td {padding: 5px;}
+
