@@ -4,9 +4,6 @@ title: Data Challenge
 order: 1
 ---
 
-Data Challenge
-==============
-
 The questions below are designed to test your proficiency with data tasks. They are intended to get progressively more difficult.
 
 ## Question 1
