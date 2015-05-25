@@ -9,7 +9,7 @@ name: WSJ Data Team
 description: Data challenge page for WSJ data team
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/media/CE5GDPQWoAAXE9l.jpg:large
+avatar: /images/wsj.png
 
 #
 # Flags below are optional
