@@ -32,10 +32,10 @@ The U.S. Securities and Exchange Commission maintains an online filing system ca
 
 ## Question 5
 
-Download the file called [manyfiles.zip](/data/manyfiles.zip?raw=true) from this repository and extract it on your local machine. Inside are a large number of files, each of which contains a number. Tally up all the numbers: What is the total?
+Download the file called [manyfiles.zip](/data/manyfiles.zip) and extract it on your local machine. Inside are a large number of files, each of which contains a number. Tally up all the numbers: What is the total?
 
 ## Question 6 (Extra Credit!)
 
-This repository contains a dataset called [bonus.csv](/data/bonus.csv?raw=true) with seven simulated variables, **V1** through **V7**.
+Download the file [bonus.csv](/data/bonus.csv?raw=true), which is a table containing seven simulated variables, **V1** through **V7**.
 
 Briefly describe in words or images how the first variable (**V1**) interacts with the remaining six variables (**V2** through **V7**).
