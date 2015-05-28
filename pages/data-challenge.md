@@ -3,8 +3,7 @@ layout: page
 title: Data Challenge
 order: 1
 ---
-
-The questions below are designed to test your proficiency with data tasks. They are intended to get progressively more difficult.
+The questions below are designed to test proficiency in tasks related to news and data. Each is intended to be more difficult than the last.
 
 ## Question 1
 
