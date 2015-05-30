@@ -35,6 +35,6 @@ Download the file called [manyfiles.zip](/data/manyfiles.zip) and extract it on 
 
 ## Question 6 (Extra Credit!)
 
-Download the file [bonus.csv](/data/bonus.csv?raw=true), which is a table containing seven simulated variables, **V1** through **V7**.
+Download the file [bonus.csv](/data/bonus.csv), which is a table containing seven simulated variables, **V1** through **V7**.
 
 Briefly describe in words or images how the first variable (**V1**) interacts with the remaining six variables (**V2** through **V7**).
