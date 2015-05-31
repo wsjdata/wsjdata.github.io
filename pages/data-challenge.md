@@ -31,9 +31,13 @@ The U.S. Securities and Exchange Commission maintains an online filing system ca
 
 ## Question 5
 
+The New York City Police Department posts information online about people its officers have searched under a program called "stop and frisk." For the years 2003 through 2014, which NYPD precinct stopped and frisked the most people?
+
+## Question 6
+
 Download the file called [manyfiles.zip](/data/manyfiles.zip) and extract it on your local machine. Inside are a large number of files, each of which contains a number. Tally up all the numbers: What is the total?
 
-## Question 6 (Extra Credit!)
+## Question 7 (Extra Credit!)
 
 Download the file [bonus.csv](/data/bonus.csv), which is a table containing seven simulated variables, **V1** through **V7**.
 
