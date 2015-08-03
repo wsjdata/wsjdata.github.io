@@ -36,3 +36,9 @@ The New York City Police Department posts information online about people its of
 ## Question 6
 
 Download the file called [manyfiles.zip](/data/manyfiles.zip) and extract it on your local machine. Inside are a large number of files, each of which contains a number. Tally up all the numbers: What is the total?
+
+## Question 7 (Extra Credit!)
+
+Download the file [bonus.csv](/data/bonus.csv), which is a table containing seven simulated variables, **V1** through **V7**.
+
+Briefly describe in words or images how the first variable (**V1**) interacts with the remaining six variables (**V2** through **V7**).
