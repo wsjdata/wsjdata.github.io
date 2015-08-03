@@ -31,7 +31,7 @@ The U.S. Securities and Exchange Commission maintains an online filing system ca
 
 ## Question 5
 
-The New York City Police Department posts information online about people its officers have searched under a program called "stop and frisk." For the years 2003 through 2014, which NYPD precinct stopped and frisked the most people?
+The New York City Police Department posts information online about people its officers have searched under a program called "stop and frisk." Which NYPD precinct stopped and frisked the most people in 2010?
 
 ## Question 6
 
