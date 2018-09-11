@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Challenge
-order: 1
+order: 2
 ---
 The questions below are designed to test proficiency in tasks related to news and data. Each is intended to be more difficult than the last.
 
