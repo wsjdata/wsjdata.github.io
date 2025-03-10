@@ -1,4 +1,5 @@
 ---
+# Empty front matter needed for Jekyll to process this file
 ---
 
 //
@@ -15,28 +16,28 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.6 $sans;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 800px;
+  padding: 0 20px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $serif;
   color: $darkerGray;
   font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.5;
+  margin: 1.2em 0 0.8em;
   padding: 0;
 
   @include mobile {
@@ -45,41 +46,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 32px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: 18px 0;
+  line-height: 1.8;
 }
 
 a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
+  transition: color 0.2s ease;
   &:hover, &:active {
-    color: $blue;
+    color: $link-hover;
+    text-decoration: underline;
   }
 }
 
 ul, ol {
-  margin: 15px 0;
+  margin: 18px 0;
   padding-left: 30px;
+  line-height: 1.8;
 }
 
 ul {
@@ -108,6 +113,8 @@ strong, b {
 
 img {
   max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -118,6 +125,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  margin-bottom: 20px;
 }
 
 // Specify the color of the selection
@@ -151,12 +159,14 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  background-color: $white;
+  border-bottom: 1px solid $lightGray;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 25px 0;
 
   @include mobile {
     text-align: center;
@@ -167,7 +177,8 @@ img {
   float: left;
   width: 70px;
   height: 70px;
-  margin-right: 15px;
+  margin-right: 20px;
+  overflow: hidden;
 
   @include mobile {
     float: none;
@@ -176,7 +187,11 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -192,46 +207,74 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $wsj-black;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-family: $serif;
+  font-weight: 500;
+  font-size: 32px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 17px;
 
   @include mobile {
     margin: 3px 0;
+  }
+  
+  a {
+    color: $gray;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  margin-top: 25px;
+  font-family: $sans;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    margin-top: 15px;
     display: block;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
+    margin-left: 25px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    position: relative;
+    
+    &:hover, &:active {
+      color: $blue;
+      text-decoration: none;
+    }
+    
+    &.selected-item {
+      color: $blue;
+      font-weight: 500;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $blue;
+      }
+    }
 
     @include mobile {
-      margin: 0 10px;
+      margin: 0 12px;
       color: $blue;
     }
   }
@@ -288,10 +331,113 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
+/* Team Members */
+.team-member {
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0,0,0,0), $lightGray, rgba(0,0,0,0));
+  }
+  
+  &:not(:last-child):before {
+    content: '•••';
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: $midGray;
+    background: #fff;
+    padding: 0 15px;
+    z-index: 1;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+    &:after, &:before {
+      display: none;
+    }
+  }
+  
+  a {
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  /* Style for the name (first line with bold text) */
+  strong {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  p {
+    margin: 10px 0;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 /* Table */
+table {
+  width: 100%;
+  margin: 25px 0;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
 
-table, table th, table td {border:1px solid #aaa;}
-table th {font-weight:bold; }
-table th, table td {padding: 5px;}
+th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 20px;
+  
+  @include mobile {
+    display: block;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  table {
+    margin-bottom: 0;
+  }
+}
 

@@ -14,11 +14,13 @@ A source emails you a file with the extension **CSV**. What program would you us
 
 The yearly batting averages for Derek Jeter and David Justice are given by this table:
 
+<div class="table-responsive">
 | Year | Derek Jeter | David Justice |
 |------|-------------|---------------|
 | 1995 | .250        | .253          |
 | 1996 | .314        | .321          |
 | 1997 | .291        | .329          |
+</div>
 
 Which player had the highest cumulative batting average from 1995 through 1997?
 

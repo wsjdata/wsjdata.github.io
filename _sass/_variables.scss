@@ -1,16 +1,19 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #0080c3;
+$wsj-black: #000000;
+$wsj-orange: #FF8000;
+$link-hover: #005485;
 
 // Grays
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
+$midGray: #999;
 $lightGray: #eee;
 $white: #fff;
 
@@ -18,10 +21,18 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$serif: "Escrow Condensed", Georgia, serif;
+$sans: "Exchange", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 900px) {
     @content;
   }
 }
