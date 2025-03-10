@@ -1,6 +1,6 @@
 {% for order in (0..10) %}
         {% for p in site.pages %}
-                {% if p.order == order %}
+                {% if p.order == order and p.hidden != true %}
                         <a href="{{ p.url }}" {% if p.title == page.title %}class="selected-item"{% endif %}>{{ p.title }}</a>
                 {% endif %}
         {% endfor %}
